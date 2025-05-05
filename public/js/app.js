@@ -44,6 +44,7 @@ for (let i = 0; i < 9; i++) {
         player2.played.push(i);
         useBox.push(i);
         checkWin(player2);
+        checkDraw();
         player2Score.textContent = "Player 2 score : " + player2.score;
         turn = true;
       }
@@ -52,7 +53,6 @@ for (let i = 0; i < 9; i++) {
     }
   });
 }
-
 const checkWin = (player) => {
   winConditions.some((combo) => {
     if (combo.every((index) => player.played.includes(index))) {
@@ -85,7 +85,7 @@ button.addEventListener("click", () => {
 });
 
 const checkDraw = () => {
-  if (useBox.length == 9) {
+  if (!checkWin(player1) && !checkWin(player2) && useBox.length == 9) {
     setTimeout(() => {
       alert("draw");
       ResetGame();

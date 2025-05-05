@@ -22,11 +22,11 @@ A simple Tic-Tac-Toe game built using **HTML**, **CSS**, and **Vanilla JavaScrip
 
 ## 🚀 Live Demo
 
-You can play the game here: [Live Demo](#) *https://yahya-moussair.github.io/tic-tac-to/*
+You can play the game here: [Live Demo](#) *(https://yahya-moussair.github.io/tic-tac-to/)*
 
 ## 📥 Installation
 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/tic-tac-to.git
+git clone https://github.com/yahya-moussair/tic-tac-to.git
